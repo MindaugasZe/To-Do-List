@@ -1,0 +1,125 @@
+body{
+   font-family: 'Poppins', sans-serif;
+   background-color: lightgrey;
+}
+
+.container{
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.listHeader{
+    font-weight: bold;
+    font-size: 32px;
+    
+}
+
+.listRow{
+   margin: 10px;
+   width: 500px;
+}
+.listRow:hover{
+    font-weight: bold;
+    
+}
+#inputText{
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: 2px solid green;
+   
+}
+.listRow{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.deleteButton, #saveButton, #clearButton, .editButton, .saveBtn{
+    padding:  5px 15px;  
+    cursor: pointer;
+    border-radius: 5px;
+   background-color: transparent;
+    color: whitesmoke;
+}
+.deleteButton {
+  border-color: #f44336;
+  color: red;
+}
+
+.deleteButton:hover {
+  background: #f44336;
+  color: white;
+}
+.editButton {
+  border-color: #ff9800;
+  color: orange;
+}
+
+.editButton:hover {
+  background: #ff9800;
+  color: white;
+}
+#saveButton, .saveBtn {
+  border-color: #04AA6D;
+  color: green;
+}
+
+#saveButton:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+.saveBtn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+#clearButton {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+#clearButton:hover {
+  background: #2196F3;
+  color: white;
+}
+
+
+
+.listRowText{
+    padding:  5px 5px;
+    cursor: pointer;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.newDiv{
+    margin:10px;
+    display: flex;
+}
+.editButton, .saveBtn{
+ margin-right: 10px;
+ margin-left: 10px;
+
+ 
+}
+.saveBtn{
+    display: none;
+}
+@media screen and (max-width: 576px){
+
+   .listRow{
+       display: flex;
+       flex-direction: column;
+      align-items: center;
+   }
+   .newDiv{
+       display: flex;
+   }
+   .listRowText{
+       width: 250px;
+   }
+}
